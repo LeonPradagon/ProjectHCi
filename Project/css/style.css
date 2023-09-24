@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  user-select: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*Header*/
+header {
+  display: inline;
+}
+
+nav {
+  background-color: royalblue;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 21px;
+}
+
+@media screen and (max-width: 375px) {
+  nav li a {
+    font-size: 0.9rem !important;
+  }
+  nav li:nth-child(4) {
+    padding-right: 15px;
+  }
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  transition: 1s;
+  border-bottom: 1px solid royalblue;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: royalblue;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .jumbotron h1 {
+    font-size: 1.5rem;
+  }
+  .jumbotron p {
+    font-size: 1rem;
+  }
+}
+/*End Header*/
+
+
+/*Main*/
+.jumbotron i:hover {
+  transition: 2s;
+  transform: translateY(90px);
+}
+
+
+#content {
+  float: right;
+  width: 67%;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+article h2 span {
+  text-align: left;
+  border-bottom: 4px solid royalblue;
+}
+
+article p {
+  text-align: justify;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px  lightgrey;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  margin: 0 0 20px 0;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=file],
+textarea{
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    box-shadow: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px royalblue!important;
+    outline: 0 none !important;
+}
+
+.mb-7 {
+  margin-bottom: 7px;
+}
+/*End Main*/
+
+
+/*aside*/
+aside {
+  float: left;
+  width: 33%;
+  padding-right: 20px;
+}
+
+
+/*Footer*/
+footer {
+  background-color: royalblue;
+  padding: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+/*Footer*/
+
+/*External*/
+img {
+  transition: 0.7s;
+  cursor: pointer;
+}
+img:hover {
+  transition: 0.7s;
+  cursor: pointer;
+  transform: scale3d(0.8, 0.8, 0.8);
+}
